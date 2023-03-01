@@ -169,6 +169,7 @@ async function getAIMessage({ Content, FromUserName }) {
   return `[GPT]: ${response}`;
 }
 
+
 // 消息推送
 router.post('/message/post', async ctx => {
   const { ToUserName, FromUserName, Content, CreateTime } = ctx.request.body;
